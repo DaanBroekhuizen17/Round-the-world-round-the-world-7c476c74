@@ -18,8 +18,7 @@ $restbedrag = $bedrag;
 
 foreach(geldeenheden as $euro)
 {
-    if($restbedrag >= $euro)
-    {
+    if($restbedrag >= $euro) {
         $aantalKeerEuroInRestBedrag = floor($restbedrag / $euro);
         $restbedrag = $restbedrag - $euro * $aantalKeerEuroInRestBedrag;
         echo($aantalKeerEuroInRestBedrag. " X " .$euro. " euro".PHP_EOL);
@@ -30,8 +29,7 @@ $restbedrag = $restbedrag * 100;
 
 foreach(geldeenheden as $euro)
 {
-    if($restbedrag >= $euro)
-    {
+    if($restbedrag >= $euro) {
         $aantalKeerEuroInRestBedrag = floor($restbedrag / $euro);
         $restbedrag = round($restbedrag - $euro * $aantalKeerEuroInRestBedrag);
         echo($aantalKeerEuroInRestBedrag. " X " .$euro. " cent".PHP_EOL);
